@@ -15,7 +15,7 @@
             position: fixed;
             left: 0;
             top: 0;
-            width: 85px; /* Adjust width as needed */
+            width: 220px; /* Adjust width as needed */
             height: 100%;
             background-color: #999;
             color: #fff;
@@ -28,7 +28,7 @@
             margin-bottom: 10px;
         }
         .content {
-            margin-left: 86px; /* Width of sidebar + some margin */
+            margin-left: 221px; /* Width of sidebar + some margin */
             padding: 20px;
         }
         h1 {
@@ -65,18 +65,13 @@
 
 <div class="sidebar">
     <img src="https://www.freepnglogos.com/uploads/knife-png/cook-kitchen-knife-meat-icon-22.png" alt="Cooking Knife" width="40">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="team.html">Team</a>
-    <a href="products.html">Products</a>
-    <a href="services.html">Services</a>
-    <a href="testimonies.html">Testimonies</a>
-    <p class="small-font">Last Modified: <span id="lastModified"></span></p>
-  <script>
-    var lastModified = document.lastModified;
-    document.getElementById('lastModified').textContent = lastModified;
-  </script>
-
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Team</a>
+    <a href="#">Products</a>
+    <a href="#">Services</a>
+    <a href="#">Testimonies</a>
+    <p>Last modified: <span id="lastModified"></span></p>
 </div>
 
 <div class="content">
@@ -92,6 +87,11 @@
                 <ul>
                     <li><strong>$50 per session</strong></li>
                 </ul>
+                <ul>
+                    <li>Learn essential cooking techniques</li>
+                    <li>Hands-on experience in a professional kitchen</li>
+                    <li>Create delicious dishes from scratch</li>
+                </ul>
                 <img src="https://cdn-p300.americantowns.com/img/article/mn-cooking-classes-1.jpg" alt="Cooking class" width="300">
             </li>
             <li>
@@ -99,6 +99,11 @@
                 <p>Host your next event with us! Whether it's a birthday party, team building event, or a family gathering, we provide a unique and interactive cooking experience for your guests.</p>
                 <ul>
                     <li><strong>$200 per event</strong></li>
+                </ul>
+                <ul>
+                    <li>Fun and engaging team activities</li>
+                    <li>Memorable celebrations with delicious food</li>
+                    <li>Expert guidance from our professional chefs</li>
                 </ul>
             </li>
             <li>
@@ -108,12 +113,22 @@
                 <ul>
                     <li><strong>$100 per workshop</strong></li>
                 </ul>
+                <ul>
+                    <li>Hands-on learning from industry experts</li>
+                    <li>Expand your culinary knowledge and skills</li>
+                    <li>Explore new flavors and techniques</li>
+                </ul>
             </li>
             <li>
                 <h2><i>Private Cooking Sessions</i></h2>
                 <p>Want to improve your cooking skills one-on-one? Our private cooking sessions offer personalized guidance and instruction based on your preferences and goals.</p>
                 <ul>
                     <li><strong>$75 per hour</strong></li>
+                </ul>
+                <ul>
+                    <li>Customized learning experience</li>
+                    <li>Flexible scheduling to fit your needs</li>
+                    <li>Focus on specific techniques or cuisines</li>
                 </ul>
             </li>
         </ol>
@@ -122,11 +137,10 @@
         <div class="contact-link">
             <a href="mailto:nathansummers@email.com">Contact Us</a>
         </div>
-        <p>Last modified: <span id="lastModified"></span></p>
     </footer>
 
     <script>
-        document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString();
+        document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleString();
     </script>
 </div>
 
