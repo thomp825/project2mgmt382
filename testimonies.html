@@ -75,7 +75,11 @@
     <a href="products.html">Products</a>
     <a href="services.html">Services</a>
     <a href="testimonies.html">Testimonials</a>
-    <p class="last-modified">Last modified: <span id="lastModified"></span></p>
+   <p class="small-font">Last Modified: <span id="lastModified"></span></p>
+  <script>
+    var lastModified = document.lastModified;
+    document.getElementById('lastModified').textContent = lastModified;
+  </script>
 </div>
 <div class="content">
     <h2>Things Customers Most Like / Benefits</h2>
@@ -116,12 +120,13 @@
     </div>
     <p>Download our basic knife skills guide <a href="https://www.swsc.org/cms/lib/MN01000693/Centricity/Domain/51/Basic%20Knife%20Skills%20Guide.pdf" target="_blank">here</a>.</p>
     <p>To reach out to our company, please email us at: <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
-    <p class="last-modified">Last modified: <span id="lastModified"></span></p>
-</div>
+    
+<p class="small-font">Last Modified: <span id="lastModified"></span></p>
   <script>
     var lastModified = document.lastModified;
     document.getElementById('lastModified').textContent = lastModified;
   </script>
+    
 </body>
 </html>
 
