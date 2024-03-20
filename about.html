@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,24 +33,10 @@
             padding: 20px;
             background-color: lightblue;
         }
-        .contact-link {
-            color: #FF5733;
-            text-decoration: none;
-        }
-        .contact-link:hover {
-            text-decoration: underline;
-        }
-        .highlight {
-            font-weight: bold;
-            font-style: italic;
-            font-size: 18px;
-            color: #0066FF;
-        }
-        .small-text {
-            font-size: 14px;
-        }
-        .big-text {
-            font-size: 24px;
+        .small-font {
+            font-size: 12px;
+            color: #fff;
+            margin-top: 20px; /* Add some margin to separate last modified date */
         }
     </style>
 </head>
@@ -59,59 +44,55 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <img src="https://www.freepnglogos.com/uploads/knife-png/cook-kitchen-knife-meat-icon-22.png" alt="History Products" width="40">
- <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="team.html">Team</a>
-    <a href="products.html">Products</a>
-    <a href="services.html">Services</a>
-    <a href="testimonies.html">Testimonies</a>
-    <p class="small-font">Last Modified: <span id="lastModified"></span></p>
-  <script>
-    var lastModified = document.lastModified;
-    document.getElementById('lastModified').textContent = lastModified;
-  </script>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="testimonies.html">Testimonies</a>
+        <p class="small-font">Last Modified: <span id="sidebarLastModified"></span></p>
     </div>
 
     <!-- Content -->
     <div class="content">
-    <h1>Learn More About Us!</h1>
-    <h2><u>History</u></h2>
-    <p><i>In 1971,</i> Christie and Chris’s Cooking Cabin began its journey as a family-owned business in Indiana. Over the years, our dedication to quality kitchen utensils has propelled us to become a household name across the United States.
+        <h1>Learn More About Us!</h1>
+        <h2><u>History</u></h2>
+        <p><i>In 1971,</i> Christie and Chris’s Cooking Cabin began its journey as a family-owned business in Indiana. Over the years, our dedication to quality kitchen utensils has propelled us to become a household name across the United States.
 
-Rooted in a passion for cooking and a commitment to craftsmanship, we've expanded our reach while staying true to our origins. Today, from coast to coast, our utensils grace kitchens, inspiring culinary delights and fostering unforgettable dining experiences. </p>
+        Rooted in a passion for cooking and a commitment to craftsmanship, we've expanded our reach while staying true to our origins. Today, from coast to coast, our utensils grace kitchens, inspiring culinary delights and fostering unforgettable dining experiences. </p>
 
-	<p><b>Core Values:</b><p>
-    <ul>
-        <li>Quality Craftmanship</li>
-        <li>Innovation</li>
-        <li>Customer Satisfaction</li>
-        <li>Sustainability</li>
-  
-    </ul>
-     <img src="https://images.squarespace-cdn.com/content/v1/56bb82a02b8ddea8e9390469/1628770256031-C4CDG5LRKSXJOLAV1J6Z/Photo+Aug+10%2C+3+49+25+PM.jpg?format=2500w" alt="History Products" width="300">
-    
-    <h2><u>What We Do</u></h2>
-     <p>We are a world class knife and kitchen utensil provider. We specialize in the best products for our client and offer a life time warranty.</p>
-    <p><b>Steps to Claim a Free Trial:</b><p>
-    <ol>
-        <li class="highlight">Contact Us via Email</li>
-        <li class="highlight">Provide your information</li>
-        <li class="highlight">We will send you a free trail of our product!</li>
-    </ol>
-    
-    <p>For more information, please <a href="mailto:jadenbeveridge@email.com" class="contact-link">contact us</a>.</p>
-    
-    <p>Download our catalog of our the knifes we offer in our <a href="https://hotbreadkitchen.org/wp-content/uploads/2020/08/Knife-Skills-Notes-3.pdf">knife set</a>.</p>
-    
-   
-    
-    <p class="small-text">Last modified: <span id="lastModified"></span></p>
-    
+        <p><b>Core Values:</b></p>
+        <ul>
+            <li>Quality Craftsmanship</li>
+            <li>Innovation</li>
+            <li>Customer Satisfaction</li>
+            <li>Sustainability</li>
+        </ul>
+        <img src="https://images.squarespace-cdn.com/content/v1/56bb82a02b8ddea8e9390469/1628770256031-C4CDG5LRKSXJOLAV1J6Z/Photo+Aug+10%2C+3+49+25+PM.jpg?format=2500w" alt="History Products" width="300">
+
+        <h2><u>What We Do</u></h2>
+        <p>We are a world-class knife and kitchen utensil provider. We specialize in the best products for our clients and offer a lifetime warranty.</p>
+        <p><b>Steps to Claim a Free Trial:</b></p>
+        <ol>
+            <li class="highlight">Contact Us via Email</li>
+            <li class="highlight">Provide your information</li>
+            <li class="highlight">We will send you a free trial of our product!</li>
+        </ol>
+
+        <p>For more information, please <a href="mailto:jadenbeveridge@email.com" class="contact-link">contact us</a>.</p>
+
+        <p>Download our catalog of our knives we offer in our <a href="https://hotbreadkitchen.org/wp-content/uploads/2020/08/Knife-Skills-Notes-3.pdf">knife set</a>.</p>
+
+        <p class="small-font">Last modified: <span id="bottomLastModified"></span></p>
+    </div>
+
     <script>
         // JavaScript to display last modified date
-        document.getElementById("lastModified").textContent = document.lastModified;
+        var lastModified = document.lastModified;
+        document.getElementById('sidebarLastModified').textContent = lastModified;
+        document.getElementById('bottomLastModified').textContent = lastModified;
     </script>
 
-   
 </body>
 </html>
+
