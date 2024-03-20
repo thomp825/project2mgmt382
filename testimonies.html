@@ -117,10 +117,10 @@
     <p>To reach out to our company, please email us at: <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
     <p class="last-modified">Last modified: <span id="lastModified"></span></p>
 </div>
-<script>
-    // JavaScript to display last modified date
-    document.getElementById("lastModified").textContent = document.lastModified;
-</script>
+  <script>
+    var lastModified = document.lastModified;
+    document.getElementById('lastModified').textContent = lastModified;
+  </script>
 </body>
 </html>
 
