@@ -9,6 +9,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            background-color: lightblue; /* Changed background color to light blue */
         }
         .sidebar {
             position: fixed;
@@ -36,24 +37,27 @@
             text-align: center;
             text-decoration: underline;
         }
-        h2 {
-            color: #0066FF;
-        }
         p {
             font-size: 1.1em;
             line-height: 1.6;
         }
         a {
             color: #0066FF;
-            text-decoration: none;
+            text-decoration: underline; /* Added underline for hyperlinks */
         }
         a:hover {
-            text-decoration: underline;
+            text-decoration: none; /* Removed underline on hover */
         }
         .contact-link {
             display: block;
             text-align: center;
             margin-top: 20px;
+        }
+        li h2 {
+            font-style: italic; /* Italicize service names */
+        }
+        li ul li {
+            font-weight: bold; /* Boldface dollar amounts */
         }
     </style>
 </head>
@@ -76,39 +80,41 @@
     <main>
         <ol>
             <li>
-                <h2>Amateur Cooking Classes</h2>
+                <h2><i>Amateur Cooking Classes</i></h2>
                 <p>We offer a variety of cooking classes tailored for amateurs. From basic knife skills to advanced pastry making, our classes cater to all skill levels.</p>
+                <p>Check out our <a href="https://www.picktime.com/">class schedule</a> to see what's cooking!</p>
                 <ul>
-                    <li>$50 per session</li>
+                    <li><strong>$50 per session</strong></li>
                 </ul>
+                <img src="https://cdn-p300.americantowns.com/img/article/mn-cooking-classes-1.jpg" alt="Cooking class" width="300">
             </li>
             <li>
-<img src="https://cdn-p300.americantowns.com/img/article/mn-cooking-classes-1.jpg" alt="Cooking class" width="300" >
-                <h2>Cooking Events</h2>
+                <h2><i>Cooking Events</i></h2>
                 <p>Host your next event with us! Whether it's a birthday party, team building event, or a family gathering, we provide a unique and interactive cooking experience for your guests.</p>
                 <ul>
-                    <li>$200 per event</li>
+                    <li><strong>$200 per event</strong></li>
                 </ul>
             </li>
             <li>
-                <h2>Culinary Workshops</h2>
+                <h2><i>Culinary Workshops</i></h2>
                 <p>Join our workshops to dive deep into specific culinary topics. From pasta making to wine pairing, our workshops are led by experienced chefs and industry professionals.</p>
+                <p>Explore our upcoming <a href="https://www.ice.edu/sites/default/files/inline-images/2021.MainCourseFall.pdf">workshops</a> and reserve your spot!</p>
                 <ul>
-                    <li>$100 per workshop</li>
+                    <li><strong>$100 per workshop</strong></li>
                 </ul>
             </li>
             <li>
-                <h2>Private Cooking Sessions</h2>
+                <h2><i>Private Cooking Sessions</i></h2>
                 <p>Want to improve your cooking skills one-on-one? Our private cooking sessions offer personalized guidance and instruction based on your preferences and goals.</p>
                 <ul>
-                    <li>$75 per hour</li>
+                    <li><strong>$75 per hour</strong></li>
                 </ul>
             </li>
         </ol>
     </main>
     <footer>
         <div class="contact-link">
-            <a href="mailto:info@christieandchriscabin.com">Contact Us</a>
+            <a href="mailto:nathansummers@email.com">Contact Us</a>
         </div>
         <p>Last modified: <span id="lastModified"></span></p>
     </footer>
