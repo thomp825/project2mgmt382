@@ -82,10 +82,12 @@
             <a href="mailto:nathansummers@email.com" style="color: #0066FF; text-decoration: underline;">Contact Us</a>
         </div>
     </footer>
+  <p class="small-font">Last Modified: <span id="lastModified"></span></p>
 
-    <script>
-        document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleString();
-    </script>
+  <script>
+    var lastModified = document.lastModified;
+    document.getElementById('lastModified').textContent = lastModified;
+  </script>
 </div>
 
 </body>
