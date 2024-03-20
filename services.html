@@ -15,7 +15,7 @@
     <a href="products.html" style="display: block; color: #fff; text-decoration: none; margin-bottom: 10px;">Products</a>
     <a href="services.html" style="display: block; color: #fff; text-decoration: none; margin-bottom: 10px;">Services</a>
     <a href="testimonies.html" style="display: block; color: #fff; text-decoration: none; margin-bottom: 10px;">Testimonies</a>
-    <p style="margin-top: 10px;">Last modified: <span id="lastModified"></span></p>
+    <p style="margin-top: 10px;">Last modified: <span id="sidebarLastModified"></span></p>
 </div>
 
 <div style="margin-left: 86px; padding: 50px;">
@@ -82,13 +82,15 @@
             <a href="mailto:nathansummers@email.com" style="color: #0066FF; text-decoration: underline;">Contact Us</a>
         </div>
     </footer>
-  <p class="small-font">Last Modified: <span id="lastModified"></span></p>
-
-  <script>
-    var lastModified = document.lastModified;
-    document.getElementById('lastModified').textContent = lastModified;
-  </script>
+    <p style="margin-top: 20px;">Last Modified: <span id="bottomLastModified"></span></p>
 </div>
+
+<script>
+    var lastModified = document.lastModified;
+    document.getElementById('sidebarLastModified').textContent = lastModified;
+    document.getElementById('bottomLastModified').textContent = lastModified;
+</script>
 
 </body>
 </html>
+
