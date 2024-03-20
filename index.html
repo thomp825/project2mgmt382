@@ -9,7 +9,7 @@
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-	background-color: lightblue;
+        background-color: lightblue;
     }
     .sidebar {
         position: fixed;
@@ -32,44 +32,42 @@
         padding: 50px;
         background-color: lightblue;
     }
+    .small-font {
+        font-size: 12px;
+        color: #fff;
+        margin-top: 20px; /* Add some margin to separate last modified date */
+    }
 </style>
 </head>
 <body>
 
 <div class="sidebar">
-	<img src="https://www.freepnglogos.com/uploads/knife-png/cook-kitchen-knife-meat-icon-22.png" alt="History Products" width="40">
+    <img src="https://www.freepnglogos.com/uploads/knife-png/cook-kitchen-knife-meat-icon-22.png" alt="History Products" width="40">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="team.html">Team</a>
     <a href="products.html">Products</a>
     <a href="services.html">Services</a>
     <a href="testimonies.html">Testimonies</a>
-	
-<p class="small-font">Last Modified: <span id="lastModified"></span></p>
-  <script>
-    var lastModified = document.lastModified;
-    document.getElementById('lastModified').textContent = lastModified;
-  </script>
-
-    
+    <p class="small-font">Last Modified: <span id="sidebarLastModified"></span></p>
 </div>
 
 <div class="content">
-  
     <h1>Christie and Chris’s Cooking Cabin</h1>
-     <img src="https://as2.ftcdn.net/v2/jpg/03/10/73/91/1000_F_310739117_UZDLAlzXcb7VamhAnaEcJMhYmzHZCfvX.jpg" alt="History Products" width="300">
+    <img src="https://as2.ftcdn.net/v2/jpg/03/10/73/91/1000_F_310739117_UZDLAlzXcb7VamhAnaEcJMhYmzHZCfvX.jpg" alt="History Products" width="300">
     <p>Team Number 1</p>
     <p>Jackson Thompson, Cole Tyler, Nathan Summers, Jaden Beveridge, Mahek Gupta</p>
-      <!-- Last Modified Date -->
-  <p class="small-font">Last Modified: <span id="lastModified"></span></p>
-
-  <script>
-    var lastModified = document.lastModified;
-    document.getElementById('lastModified').textContent = lastModified;
-  </script>
-
+    <!-- Last Modified Date -->
+    <p class="small-font">Last Modified: <span id="bottomLastModified"></span></p>
 </div>
-</body>
 
+<script>
+    var lastModified = document.lastModified;
+    document.getElementById('sidebarLastModified').textContent = lastModified;
+    document.getElementById('bottomLastModified').textContent = lastModified;
+</script>
+
+</body>
 </html>
+
 
